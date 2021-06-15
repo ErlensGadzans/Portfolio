@@ -1,0 +1,105 @@
+.aboutContainer {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.cardAbout {
+  border: none;
+  background-color: transparent;
+}
+
+.columnMe {
+  display: grid;
+  align-items: center;
+}
+
+.myImage {
+  border-radius: 50%;
+}
+
+.myIcons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.githubIcon,
+.linkedinIcon,
+.cvIcon {
+  color: black;
+  opacity: 0.5;
+}
+
+.positionDescription {
+  color: black;
+  opacity: 0.5;
+}
+
+.positionDescription:hover {
+  color: black;
+  opacity: 1;
+}
+
+.githubIcon:hover,
+.linkedinIcon:hover,
+.cvIcon:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 1;
+}
+
+.cvIcon:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.myName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.positionDescription {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillsIconsJS {
+  border: none;
+  display: inline-block;
+  background-color: transparent;
+}
+
+.skillsIconsCSS {
+  border: none;
+  display: inline-block;
+  animation-delay: 0.5s;
+  background-color: transparent;
+}
+.skillsIconsBootstrap {
+  border: none;
+  display: inline-block;
+  animation-delay: 1s;
+  background-color: transparent;
+}
+
+.skillsIconsReact {
+  border: none;
+  display: inline-block;
+  animation-delay: 1.5s;
+  background-color: transparent;
+}
+
+.skillIconImg {
+  height: 7vw;
+  object-fit: contain;
+}
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: auto;
+}
