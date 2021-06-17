@@ -1,11 +1,19 @@
+.navbarComponent {
+  background-color: transparent;
+}
+
 .navBar {
-  /* background-color: transparent; */
-  height: 80px;
-  width: 100%;
-  position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
+  background: rgb(152, 190, 211);
+  background: linear-gradient(
+    47deg,
+    rgba(152, 190, 211, 1) 0%,
+    rgba(41, 91, 140, 1) 100%
+  );
+  /* height: 80px;
+  width: 100%; */
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: center; */
   /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2); */
 }
 

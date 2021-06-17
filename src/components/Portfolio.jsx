@@ -1,7 +1,15 @@
 import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
-import { Card, CardDeck, Button, Row, Modal } from "react-bootstrap";
-import Container from "@material-ui/core/Container";
+import {
+  Card,
+  CardDeck,
+  Button,
+  Row,
+  Modal,
+  Container,
+  Col,
+} from "react-bootstrap";
+// import Container from "@material-ui/core/Container";
 import Covid from "../files/covidTracker.png";
 import { Github, BoxArrowUpRight } from "react-bootstrap-icons";
 import WOW from "wowjs";
@@ -19,10 +27,11 @@ export default function Portfolio() {
     <div className="portfolioComponent">
       <Container className="portfolioContainer">
         <Row>
-          <h3>Recent projects</h3>
-
-          <CardDeck>
-            <Card className="cardPortfolioCovid text-white text-center wow fadeInDown">
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
+            <Card
+              className="cardPortfolioCovid text-white text-center wow fadeInDownv"
+              style={{ width: "auto" }}
+            >
               <Card.Img className="portfolioImg" src={Covid} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">COVID-19 Tracker</Card.Title>
@@ -44,7 +53,12 @@ export default function Portfolio() {
                 </Button>
               </Card.ImgOverlay>
             </Card>
-            <Card className="cardPortfolioWeatherApp text-white text-center wow fadeInDown ">
+          </Col>
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
+            <Card
+              className="cardPortfolioWeatherApp text-white text-center wow fadeInDown"
+              style={{ width: "auto" }}
+            >
               <Card.Img className="portfolioImg" src={Weather} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">Weather App </Card.Title>
@@ -71,7 +85,12 @@ export default function Portfolio() {
                 </Button>
               </Card.ImgOverlay>
             </Card>
-            <Card className="cardPortfolioSocialMedia text-white text-center wow fadeInDown">
+          </Col>
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
+            <Card
+              className="cardPortfolioSocialMedia text-white text-center wow fadeInDown"
+              style={{ width: "auto" }}
+            >
               <Card.Img className="portfolioImg" src={LatviaGuide} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">Tour operator</Card.Title>
@@ -85,7 +104,7 @@ export default function Portfolio() {
                 </Button>
               </Card.ImgOverlay>
             </Card>
-          </CardDeck>
+          </Col>
         </Row>
       </Container>
     </div>

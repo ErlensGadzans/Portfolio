@@ -1,14 +1,15 @@
 import React from "react";
-import { Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar, Container } from "react-bootstrap";
 import "./Navigation.css";
 import { scroller } from "react-scroll";
+// import Container from "@material-ui/core/Container";
 
 export default function Navigation() {
   const scrollToHome = () => {
     scroller.scrollTo("homeComponent", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart",
+      smooth: true,
     });
   };
 
@@ -16,7 +17,7 @@ export default function Navigation() {
     scroller.scrollTo("aboutComponent", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart",
+      smooth: true,
     });
   };
 
@@ -24,7 +25,7 @@ export default function Navigation() {
     scroller.scrollTo("portfolioComponent", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart",
+      smooth: true,
     });
   };
 
@@ -32,39 +33,43 @@ export default function Navigation() {
     scroller.scrollTo("contactComponent", {
       duration: 800,
       delay: 0,
-      smooth: "easeInOutQuart",
+      smooth: true,
     });
   };
 
   return (
-    <div>
-      <Navbar className="navBar" collapseOnSelect expand="lg">
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="navBar pr-5 ">
-            <Nav.Item>
+    <div className="navbarComponent">
+      <Container>
+        <Navbar
+          className="navBar"
+          collapseOnSelect
+          fixed="top"
+          expand="lg"
+          // bg="rgb(152, 190, 211)"
+        >
+          <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+          <Navbar.Collapse id="responsive-navbar-nav">
+            <Nav className="mr-auto"></Nav>
+            <Nav className="mt-2 align-items-center">
               <Nav.Link className="navItem mr-1" onClick={scrollToHome}>
                 <h1>.Home</h1>
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
+
               <Nav.Link className="navItem mr-1" onClick={scrollToAbout}>
                 <h1>.About</h1>
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
+
               <Nav.Link className="navItem mr-1" onClick={scrollToPortfolio}>
                 <h1>.Portfolio</h1>
               </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
+
               <Nav.Link className="navItem mr-1" onClick={scrollToContact}>
                 <h1>.Contact</h1>
               </Nav.Link>
-            </Nav.Item>
-          </Nav>
-        </Navbar.Collapse>
-      </Navbar>
+            </Nav>
+          </Navbar.Collapse>
+        </Navbar>{" "}
+      </Container>
     </div>
   );
 }

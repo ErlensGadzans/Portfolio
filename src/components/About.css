@@ -103,3 +103,22 @@
 .card-img-bottom {
   width: auto;
 }
+
+/* Small devices (landscape phones, 576px and up) */
+@media (max-width: 575.98px) {
+  .aboutContainer {
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .aboutContainer {
+    height: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+}

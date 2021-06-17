@@ -1,15 +1,37 @@
 import React from "react";
 import "./Home.css";
-import Container from "@material-ui/core/Container";
-import { Row, Col, Card } from "react-bootstrap";
-import { ArrowBarLeft } from "react-bootstrap-icons";
+// import Container from "@material-ui/core/Container";
+import { Row, Col, Card, Container } from "react-bootstrap";
+import { ArrowBarRight } from "react-bootstrap-icons";
 import ReactPlayer from "react-player";
 
 export default function Home() {
   return (
     <div className="homeComponent">
-      <Container className="containerHome">
+      <Container className="homeContainer">
         <Row>
+          <Col md={6} lg={6} className="d-none d-lg-block">
+            <Card style={{ width: "auto" }} className="cardDescription">
+              <Card.Body>
+                <Card.Title className="d-flex justify-content-center">
+                  <h2>Hello, I'm Erlens.</h2>
+                </Card.Title>
+
+                <Card.Title className="d-flex justify-content-center">
+                  <h4>
+                    This is my story of how I studied to become a software
+                    developer: <strong>"One day at Strive School!"</strong>
+                  </h4>
+                </Card.Title>
+
+                <h2 className="d-flex justify-content-end">
+                  {" "}
+                  {"Play video"}
+                  <ArrowBarRight className="arrowBarRight " text="Play video" />
+                </h2>
+              </Card.Body>
+            </Card>
+          </Col>
           <Col xs={12} sm={12} md={6} lg={6} className="player-wrapper">
             <ReactPlayer
               className="react-video"
@@ -17,26 +39,6 @@ export default function Home() {
               width="100%"
               height="100%"
             />
-          </Col>
-          <Col md={6} lg={6} className="d-none d-md-block">
-            <Card style={{ width: "auto" }} className="cardDescription ">
-              <Card.Body>
-                <Card.Title>
-                  <h2>
-                    Hello,<br></br> I'm Erlens.
-                  </h2>
-                </Card.Title>
-                <Card.Subtitle className="mt-5 mb-5">
-                  This is my story of how I studied to become a software
-                  developer. <b>"One day at Strive School!"</b>
-                </Card.Subtitle>
-
-                <h2>
-                  <ArrowBarLeft className="arrowBarLeft " text="Play video" />
-                  {"Play video"}
-                </h2>
-              </Card.Body>
-            </Card>
           </Col>
         </Row>
       </Container>

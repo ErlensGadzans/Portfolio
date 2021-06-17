@@ -30,7 +30,7 @@ export default function ScrollToTop() {
   }, []);
 
   return (
-    <div className="scroll-to-top">
+    <div className="scroll-to-top d-none d-lg-block">
       {isVisible && (
         <div onClick={scrollToTop}>
           <h2>

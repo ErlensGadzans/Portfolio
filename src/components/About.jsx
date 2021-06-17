@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Container from "@material-ui/core/Container";
-import { Row, Col, Card, CardDeck } from "react-bootstrap";
+// import Container from "@material-ui/core/Container";
+import { Row, Col, Card, CardDeck, Container } from "react-bootstrap";
 import "./About.css";
 import MyPic from "../files/es.png";
 import { Github, Linkedin } from "react-bootstrap-icons";
@@ -26,9 +26,9 @@ export default function About() {
     <div className="aboutComponent">
       <Container className="aboutContainer">
         <Row>
-          <Col className="columnMe " xs={12} sm={12} md={4} lg={4}>
+          <Col className="columnMe" xs={12} sm={12} md={4} lg={4}>
             <Card className="cardAbout">
-              <Card.Img variant="top" src={MyPic} className="myImage mt-3" />
+              <Card.Img variant="top" src={MyPic} className="myImage mt-3 " />
               <Card.Body>
                 <Card.Title className="myName">Erlens Gadzans</Card.Title>
                 <Card.Link
@@ -83,45 +83,47 @@ export default function About() {
               different projects. Now I'm working with MongoDB, Express, React,
               Node, and more.
             </p>
-            <h3 className="d-none d-md-block">My skills</h3>
+            <Col className="d-none d-md-block" xs={12} sm={12}>
+              <h3>My skills</h3>
 
-            <CardDeck className="skillsIconsAll mt-2 d-none d-md-block">
-              <Card className="skillsIconsJS text-center wow zoomIn ">
-                <Card.Img className="skillIconImg" src={JavaScript} />
-                <Card.Text>JavaScript</Card.Text>
-              </Card>
-              <Card className="skillsIconsCSS text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={CSS} />
-                <Card.Text>CSS</Card.Text>
-              </Card>
-              <Card className="skillsIconsBootstrap text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={Bootstrap} />
-                <Card.Text>Bootstrap</Card.Text>
-              </Card>
-              <Card className="skillsIconsReact text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={ReactIcon} />
-                <Card.Text>React</Card.Text>
-              </Card>
-            </CardDeck>
+              <CardDeck className="skillsIconsAll mt-2 ">
+                <Card className="skillsIconsJS text-center wow zoomIn ">
+                  <Card.Img className="skillIconImg" src={JavaScript} />
+                  <Card.Text>JavaScript</Card.Text>
+                </Card>
+                <Card className="skillsIconsCSS text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={CSS} />
+                  <Card.Text>CSS</Card.Text>
+                </Card>
+                <Card className="skillsIconsBootstrap text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={Bootstrap} />
+                  <Card.Text>Bootstrap</Card.Text>
+                </Card>
+                <Card className="skillsIconsReact text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={ReactIcon} />
+                  <Card.Text>React</Card.Text>
+                </Card>
+              </CardDeck>
 
-            <CardDeck className="skillsIconsAll mt-5 d-none d-md-block ">
-              <Card className="skillsIconsJS text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={Express} />
-                <Card.Text>ExpressJS</Card.Text>
-              </Card>
-              <Card className="skillsIconsCSS text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={NodeJS} />
-                <Card.Text>NodeJS</Card.Text>
-              </Card>
-              <Card className="skillsIconsBootstrap text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={MongoDB} />
-                <Card.Text>MongoDB</Card.Text>
-              </Card>
-              <Card className="skillsIconsReact text-center wow zoomIn">
-                <Card.Img className="skillIconImg" src={Postgres} />
-                <Card.Text>PostgreSQL</Card.Text>
-              </Card>
-            </CardDeck>
+              <CardDeck className="skillsIconsAll mt-5 ">
+                <Card className="skillsIconsJS text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={Express} />
+                  <Card.Text>ExpressJS</Card.Text>
+                </Card>
+                <Card className="skillsIconsCSS text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={NodeJS} />
+                  <Card.Text>NodeJS</Card.Text>
+                </Card>
+                <Card className="skillsIconsBootstrap text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={MongoDB} />
+                  <Card.Text>MongoDB</Card.Text>
+                </Card>
+                <Card className="skillsIconsReact text-center wow zoomIn">
+                  <Card.Img className="skillIconImg" src={Postgres} />
+                  <Card.Text>PostgreSQL</Card.Text>
+                </Card>
+              </CardDeck>
+            </Col>
           </Col>
         </Row>
       </Container>
