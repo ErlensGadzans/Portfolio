@@ -39,7 +39,7 @@ export default function Portfolio() {
                     target="_blank"
                   >
                     <BoxArrowUpRight className="mr-2" />
-                    View project
+                    Project
                   </Button>
                   <Button
                     className="cardButton"
@@ -49,7 +49,7 @@ export default function Portfolio() {
                     target="_blank"
                   >
                     <Github className="mr-2" />
-                    See the code
+                    Code
                   </Button>
                 </Row>
               </Card.ImgOverlay>
@@ -66,7 +66,7 @@ export default function Portfolio() {
                     onClick={() => setSmShow(true)}
                   >
                     <BoxArrowUpRight className="mr-2" />
-                    View project
+                    Project
                   </Button>
                   <Modal
                     className="modal"
@@ -86,7 +86,7 @@ export default function Portfolio() {
                     onClick={() => setSmShow(true)}
                   >
                     <Github className="mr-2" />
-                    See the code
+                    Code
                   </Button>
                 </Row>
               </Card.ImgOverlay>
@@ -103,14 +103,14 @@ export default function Portfolio() {
                     onClick={() => setSmShow(true)}
                   >
                     <BoxArrowUpRight className="mr-2" />
-                    View project
+                    Project
                   </Button>
                   <Button
                     className="cardButton"
                     onClick={() => setSmShow(true)}
                   >
                     <Github className="mr-2" />
-                    See the code
+                    Code
                   </Button>
                 </Row>
               </Card.ImgOverlay>

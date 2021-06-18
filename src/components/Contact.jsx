@@ -31,7 +31,7 @@ export default function Contact() {
     <div className="contactComponent">
       <Container className="footerContainer">
         <Row>
-          <Col className="columnContact" xs={12} sm={12} md={6} lg={6}>
+          <Col className="columnContact col-12 mt-3 col-sm-12 mt-3 col-md-6 col-lg-6">
             <h3>Contact me</h3>
             <Form onSubmit={sendEmail} className="contactForm">
               <Form.Row>
@@ -83,7 +83,7 @@ export default function Contact() {
               </Button>
             </Form>
           </Col>
-          <Col className="columnMap" xs={12} sm={12} md={6} lg={6}>
+          <Col className="columnMap col-12 mt-3 col-sm-12 mt-3 col-md-6 col-lg-6">
             <MapResult className="map" />
           </Col>
         </Row>

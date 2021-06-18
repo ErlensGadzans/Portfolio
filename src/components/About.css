@@ -17,9 +17,8 @@
 
 .myImage {
   border-radius: 50%;
-}
-.SprdMain .myImage {
-  height: 100% !important;
+  height: 400px;
+  width: auto;
 }
 
 .myIcons {
