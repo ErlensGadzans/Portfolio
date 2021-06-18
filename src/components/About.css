@@ -17,7 +17,9 @@
 
 .myImage {
   border-radius: 50%;
-  width: 100vw;
+}
+.SprdMain .myImage {
+  height: 100% !important;
 }
 
 .myIcons {
@@ -132,20 +134,3 @@
     align-items: center;
   }
 }
-
-/* @media (min-width: 992px) and (max-width: 1199.98px) {
-  .aboutContainer {
-    height: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-} */
-/* @media (min-width: 1200px) {
-  .aboutContainer {
-    height: 100%;
-    display: flex !important;
-    justify-content: center;
-    align-items: center;
-  }
-} */

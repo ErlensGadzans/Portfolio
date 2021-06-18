@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import "./Portfolio.css";
 import {
   Card,
-  CardDeck,
+  Badge,
   Button,
   Row,
   Modal,
@@ -27,81 +27,92 @@ export default function Portfolio() {
     <div className="portfolioComponent">
       <Container className="portfolioContainer">
         <Row>
-          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
-            <Card
-              className="cardPortfolioCovid text-white text-center wow fadeInDownv"
-              style={{ width: "auto" }}
-            >
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-12 mt-3 col-lg-4">
+            <Card className="cardPortfolioCovid text-white text-center wow fadeInDownv">
               <Card.Img className="portfolioImg" src={Covid} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">COVID-19 Tracker</Card.Title>
-                <Button
-                  className="cardButton"
-                  href={"https://covid19-healthdata.herokuapp.com/"}
-                  target="_blank"
-                >
-                  <BoxArrowUpRight className="mr-2" />
-                  View project
-                </Button>
-                <Button
-                  className="cardButton"
-                  href={"https://github.com/ErlensGadzans/Covid-19-tracker-FE"}
-                  target="_blank"
-                >
-                  <Github className="mr-2" />
-                  See the code
-                </Button>
+                <Row className="d-flex justify-content-between">
+                  <Button
+                    className="cardButton"
+                    href={"https://covid19-healthdata.herokuapp.com/"}
+                    target="_blank"
+                  >
+                    <BoxArrowUpRight className="mr-2" />
+                    View project
+                  </Button>
+                  <Button
+                    className="cardButton"
+                    href={
+                      "https://github.com/ErlensGadzans/Covid-19-tracker-FE"
+                    }
+                    target="_blank"
+                  >
+                    <Github className="mr-2" />
+                    See the code
+                  </Button>
+                </Row>
               </Card.ImgOverlay>
             </Card>
           </Col>
-          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
-            <Card
-              className="cardPortfolioWeatherApp text-white text-center wow fadeInDown"
-              style={{ width: "auto" }}
-            >
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-12 mt-3 col-lg-4">
+            <Card className="cardPortfolioWeatherApp text-white text-center wow fadeInDown">
               <Card.Img className="portfolioImg" src={Weather} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">Weather App </Card.Title>
-                <Button className="cardButton" onClick={() => setSmShow(true)}>
-                  <BoxArrowUpRight className="mr-2" />
-                  View project
-                </Button>
-                <Modal
-                  className="modal"
-                  size="sm"
-                  show={smShow}
-                  onHide={() => setSmShow(false)}
-                  // aria-labelledby="example-modal-sizes-title-sm"
-                >
-                  <Modal.Header closeButton className="modalHeader">
-                    <Modal.Title>
-                      <small>The project is under construction</small>
-                    </Modal.Title>
-                  </Modal.Header>
-                </Modal>
-                <Button className="cardButton" onClick={() => setSmShow(true)}>
-                  <Github className="mr-2" />
-                  See the code
-                </Button>
+                <Row className="d-flex justify-content-between">
+                  <Button
+                    className="cardButton"
+                    onClick={() => setSmShow(true)}
+                  >
+                    <BoxArrowUpRight className="mr-2" />
+                    View project
+                  </Button>
+                  <Modal
+                    className="modal"
+                    size="sm"
+                    show={smShow}
+                    onHide={() => setSmShow(false)}
+                  >
+                    <Modal.Header closeButton className="modalHeader">
+                      <Modal.Title>
+                        <small>The project is under construction</small>
+                      </Modal.Title>
+                    </Modal.Header>
+                  </Modal>
+
+                  <Button
+                    className="cardButton"
+                    onClick={() => setSmShow(true)}
+                  >
+                    <Github className="mr-2" />
+                    See the code
+                  </Button>
+                </Row>
               </Card.ImgOverlay>
             </Card>
           </Col>
-          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-4 col-lg-4">
-            <Card
-              className="cardPortfolioSocialMedia text-white text-center wow fadeInDown"
-              style={{ width: "auto" }}
-            >
+          <Col className="col-12 mt-3 col-sm-12 mt-3 col-md-12 mt-3 col-lg-4">
+            <Card className="cardPortfolioSocialMedia text-white text-center wow fadeInDown">
               <Card.Img className="portfolioImg" src={LatviaGuide} />
               <Card.ImgOverlay className="cardImgOverelay">
                 <Card.Title className="cardTitle">Tour operator</Card.Title>
-                <Button className="cardButton" onClick={() => setSmShow(true)}>
-                  <BoxArrowUpRight className="mr-2" />
-                  View project
-                </Button>
-                <Button className="cardButton" onClick={() => setSmShow(true)}>
-                  <Github className="mr-2" />
-                  See the code
-                </Button>
+                <Row className="d-flex justify-content-between">
+                  <Button
+                    className="cardButton"
+                    onClick={() => setSmShow(true)}
+                  >
+                    <BoxArrowUpRight className="mr-2" />
+                    View project
+                  </Button>
+                  <Button
+                    className="cardButton"
+                    onClick={() => setSmShow(true)}
+                  >
+                    <Github className="mr-2" />
+                    See the code
+                  </Button>
+                </Row>
               </Card.ImgOverlay>
             </Card>
           </Col>
