@@ -35,7 +35,7 @@ export default function Home() {
           <Col xs={12} sm={12} md={6} lg={6} className="player-wrapper">
             <ReactPlayer
               className="react-video"
-              url="https://www.youtube.com/watch?v=hKfWEnIpCcg"
+              url="https://www.youtube.com/watch?v=aY_7ngpzj-o"
               width="100%"
               height="100%"
             />
